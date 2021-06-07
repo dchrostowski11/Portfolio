@@ -1,0 +1,58 @@
+@import '../../styles.scss';
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Bebas Neue';
+
+    .welcome {
+        color: #c5d5d8;
+        font-size: 5rem;
+        width: 60%;
+        float: left;
+        // padding: 2rem 10rem 4rem;
+        line-height: 5rem;
+        // position: relative;
+    }
+    .name {
+        font-weight: 700;
+        color: $primary-text;
+    }
+    .meet {
+        color: #A9B3B5;
+        letter-spacing: .05em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        font-family: 'Bebas Neue';
+    
+        .welcome {
+            color: #A9B3B5;
+            font-size: 3rem;
+            width: 60%;
+            float: left;
+            // padding: 2rem 10rem 4rem;
+            line-height: 3rem;
+            // position: relative;
+        }
+        .name {
+            font-weight: 700;
+            color: $primary-text;
+        }
+        .meet {
+            padding-top: 4rem;
+            color: #A9B3B5;
+            letter-spacing: .05em;
+        }
+    }
+}

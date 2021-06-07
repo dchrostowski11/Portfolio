@@ -1,0 +1,52 @@
+@import '../../styles.scss';
+
+.footer {
+    margin-top: 6rem;
+    width: 100%;
+    height: 30vh;
+    background-color: $primary;
+    
+    .title {
+        color: #c5d5d8;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Bebas Neue';
+    }
+}
+
+.details {
+    display: grid;
+    place-content: center;
+    p {
+        color: #c5d5d8;
+    }
+}
+
+.left, .right {
+    background-color: $primary;
+    text-align: left;
+}
+
+footer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 80% auto;
+}
+
+
+
+img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+
+    a {
+        color: #c5d5d8;
+    }
+    
+}
+

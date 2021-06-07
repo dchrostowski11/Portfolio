@@ -1,0 +1,54 @@
+@import 'src/styles.scss';
+
+header {
+    background-color: rgba($color: white, $alpha: 0);
+    top: 0;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        a {
+            color: #c5d5d8;
+            display: block;
+            padding: .5em 2em;
+        }
+        a:hover{
+            color: $primary-text;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 420px) {
+    header {
+        top: 0;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    
+        ul {
+            display: flex;
+            justify-content: center;
+    
+            a {
+                color: whitesmoke;
+                display: block;
+            }
+        }
+    }
+
+    a:hover{
+        color: $primary-text;
+    }
+}
