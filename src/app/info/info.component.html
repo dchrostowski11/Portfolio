@@ -1,52 +1,58 @@
-<div class="information">
+<div class="information" id="info">
 
   <div class="title">
     <h1>Experience</h1>
   </div>
 
-  <div class="experience">
+  <div class="experience" id="experience-section">
 
-    <div class="card" *ngFor='let job of jobs'>
-      <div class="card-inner">
-        <div class="card-face card-face-front">
-          <img class="company-logo" src={{job.logoUrl}} alt="{{job.companyName}} Logo">
-        </div>
-        <div class="card-face card-face-back">
-          <div class="card-content">
-            <div class="card-header">
-              <h1 class="company-name">{{ job.companyName }}</h1>
-              <h2 class="position">{{ job.position }}</h2>
-              <p class="start-finish">{{ job.startDate | date: 'MMMM yyyy'}} - {{ job.endDate | date: 'MMMM yyyy' }}</p>
-              <p class="about"> {{ job.about }}</p>
-            </div>
-            <div class="position-summary">
-              <ul>
-                <li>Developed single-page responsive designs utilizing Angular with <strong>Typescript</strong>,
-                  <strong>HTML</strong> and <strong>CSS</strong></li>
-                <li>Improved program selection speed across platform by creating a reusable component with
-                  multi-selectable
-                  clients</li>
-                <li>Worked in a medium-sized team utilizing <strong>Azure Dev Ops</strong> and <strong>GitFlow</strong>
-                  as
-                  version control</li>
-              </ul>
-            </div>
+    <div class="card" *ngFor='let job of jobs; let jobIndex=index' (click)="cardClicked(jobIndex)"
+      [@cardFlip]="job.state">
+
+      <div class="face front">
+        <img class="company-logo" src={{job.logoUrl}} alt="{{job.companyName}} Logo">
+      </div>
+
+      <div class="face back">
+        <div class="card-content">
+          <div class="card-header">
+            <h1 class="company-name">{{ job.companyName }}</h1>
+            <h2 class="position">{{ job.position }}</h2>
+            <p class="start-finish">{{ job.startDate | date: 'MMMM yyyy'}} - {{ job.endDate | date: 'MMMM yyyy' }}</p>
+            <p class="about"> {{ job.about }}</p>
+          </div>
+          <div class="position-summary">
+            <ul *ngFor='let bullet of job.summary'>
+              <li>{{bullet}}</li>
+            </ul>
           </div>
         </div>
       </div>
+
     </div>
+
   </div>
 
-  <div class="about-me">
+  <div class="about-me" id="about-me-section">
     <div class="title">
       <h1>About Me</h1>
     </div>
     <div class="details">
-      <p> Hello, I was introduced to web development through my first job and it helped me get some experience
-        building responsive single-page web applications in Angular.  
-        Recently, I have spent some time trying to learn more UX/UI topics such as using Unity.  
-        I am someone who is a big automotive enthusiast and is constatntly trying to stay up to date with what is going on in that space.  
-        In my spare time I also dabble in some photography. </p>
+      <p> After graduating from Rutgers University with a B.S. in Computer Science,
+        I was introduced to web development through my first job and it helped me get some experience
+        building responsive single-page web applications in Angular. It also exposed me to the typical workflows of a
+        software developer
+        where I had to participate in daily standups as well as bi-weekly sprint planning meetings to discuss progress
+        on projects.
+      </p>
+
+      <p>
+        Recently, I have spent some time trying to learn more UX/UI to build upon the frontend experience that I have.
+        To supplement that, I have been learning some Unity as I know that it is a very popular platform to
+        build a variety of apps and experiences.  It also happens to tie in together some of my interests including the automotive space and technology.
+      </p>
+
+
     </div>
   </div>
 

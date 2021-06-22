@@ -24,7 +24,15 @@
     .meet {
         color: #A9B3B5;
         letter-spacing: .05em;
+        animation-name: meet-bounce;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;      
     }
+}
+
+@keyframes meet-bounce {
+    0%   {left:0px; top:0px;}
+    100% {left:0px; top:20px;}
 }
 
 @media screen and (max-width: 420px) {

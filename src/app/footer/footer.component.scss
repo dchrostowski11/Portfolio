@@ -17,6 +17,7 @@
 .details {
     display: grid;
     place-content: center;
+    
     p {
         color: #c5d5d8;
     }
@@ -30,23 +31,40 @@
 footer {
     height: 100%;
     display: grid;
-    grid-template-columns: 80% auto;
 }
-
-
 
 img {
     height: 3rem;
     width: 3rem;
 }
 
+.left {
+    padding: 0 10%;
+
+    h1 {
+        margin-bottom: 0;
+    }
+}
+
 .right {
     display: flex;
-    align-items: center;
+    justify-content: center;
+
+    li {
+        float: left;
+        text-align: center;
+        padding: .5rem;
+    }
 
     a {
         color: #c5d5d8;
     }
-    
 }
 
+span {
+    color: white;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}

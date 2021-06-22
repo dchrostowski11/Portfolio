@@ -6,4 +6,5 @@ export interface Job {
     about: string;
     summary: string[];
     logoUrl: string;
+    state: 'default' | 'flipped';
 }

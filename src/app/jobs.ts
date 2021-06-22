@@ -8,11 +8,13 @@ export const JOBS: Job[] = [
         endDate: new Date('1/15/2021'),
         about: 'Company that works with biopharmaceutical manufactureres to help commercialize and maximize the benefits of specialty and branded medications.',
         summary: [
-            'Developed single-page responsive designs utilizing Angular with <strong>Typescript</strong><strong>HTML</strong> and <strong>CSS</strong>',
+            'Developed single-page responsive designs utilizing Angular with Typescript, HTML and CSS',
             'Improved program selection speed across platform by creating a reusable component with multi-selectable clients',
-            'Worked in a medium-sized team utilizing <strong>Azure Dev Ops</strong> and <strong>GitFlow</strong> as version control'
+            'Focused on test-driven web development with CI/CD pipelines in Azure DevOps',
+            'Worked in a medium-sized team utilizing Azure Dev Ops and GitFlow as version control'
         ],
-        logoUrl: '../../assets/icons/crx-logo.svg'
+        logoUrl: '../../assets/icons/crx-logo.svg',
+        state: 'default'
     },
     {
         companyName: 'Memorial Sloan Kettering Cancer Center',
@@ -22,9 +24,10 @@ export const JOBS: Job[] = [
         about: 'A non-profit hospital that is a leader in cancer research and treatment.',
         summary: [
             'Assisted in server setup and restoring backed up servers',
-            'Designed a <strong>Java</strong> program to decrease backup server search',
+            'Designed a Java program to decrease backup server search',
         ],
-        logoUrl: '../../assets/icons/msk.svg'
+        logoUrl: '../../assets/icons/msk.svg',
+        state: 'default'
     },
     {
         companyName: 'BMW of North America',
@@ -36,7 +39,7 @@ export const JOBS: Job[] = [
             'Performed automotive repairs and general maintenance while shadowing experienced technicians',
             'Performed quality checks and inspections on new vehicle and motorcycle deliveries',
         ],
-        logoUrl: '../../assets/icons/bmw.svg'
-
+        logoUrl: '../../assets/icons/bmw.svg',
+        state: 'default'
     }
 ];

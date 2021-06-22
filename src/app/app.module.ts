@@ -9,8 +9,8 @@ import { InfoComponent } from './info/info.component';
 import { MatButtonModule } from '@angular/material/button';
 import { HeaderComponent } from './header/header.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 import { FooterComponent } from './footer/footer.component';
-import { ScrollbarDirective } from './directives/scrollbar.directive';
 
 
 @NgModule({
@@ -19,15 +19,15 @@ import { ScrollbarDirective } from './directives/scrollbar.directive';
     HeroComponent,
     InfoComponent,
     HeaderComponent,
-    FooterComponent,
-    ScrollbarDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,9 +9,8 @@ $regular-text: #A9B3B5;
 
 
 body {
-    margin: 0;
+    margin: 0 auto;
     height: 100vh;
-    // margin-top: 100px;
     font-family: 'Poppins';
     font-size: 18px;
     background-color: black;
@@ -31,14 +30,14 @@ img {
     width: 100%;
 }
 
-// ::-webkit-scrollbar {
-//     width: 12px;
-// }
+::-webkit-scrollbar {
+    width: 12px;
+}
 
-// ::-webkit-scrollbar-thumb {
-//     background: #A970FF;
-//     border-radius: 6px;
-// }
+::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: 6px;
+}
 
 
 @media screen and (max-width: 420px) {
